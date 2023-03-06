@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.theme-dark {
+  --dark-text: #ffffff;
+  --light-text: #F9F8F8;  
+  --dark-background: #2F4550;
+  --light-background: #586F7C;
+  --accent: #B8DBD9;
+  --button-border: #B8DBD9;
+  transition: .2s ease;
+}
+.theme-light {
+  --dark-text: #24385b;
+  --light-text: #5E4B56;
+  --dark-background: #DBE7E4;
+  --light-background: #EDDCD2;
+  --accent: #DBE7E4;
+  --button-border: #5E4B56;
+  transition: .2s ease;
+}
+ html, #root {
+  background-color: var(--dark-background);
+  color: var(--dark-text);
+  transition: .2s ease;
+} 

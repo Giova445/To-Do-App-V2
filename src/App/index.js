@@ -45,7 +45,7 @@ function App() {
 
         <TodoList>
             {error && <TodosError error={error}/>}
-            {loading && <TodosLoading />}
+            {loading && new Array(3).fill(1).map((a, i) => <TodosLoading key={i} />)}
             {(!loading && !filterTodos.length) && <EmptyTodos/>}
             {filterTodos.map(todo=> (
             <TodoItem
